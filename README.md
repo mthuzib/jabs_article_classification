@@ -24,3 +24,41 @@ The primary goal is to automate and optimize the classification process while en
 - **Editors & Reviewers:** Spend less time on administrative tasks and more on content evaluation.
 - **Researchers & Readers**: Quickly locate relevant articles due to accurate tagging.
 - **Journal Management**: Improve operational efficiency and reduce publication delays
+## *3. Data Mining Goals*  
+To achieve the business objectives, we will implement a *text classification model* using Natural Language Processing (NLP) and supervised learning. The key steps include:  
+
+### *Step 1: Data Collection & Preprocessing*  
+- *Dataset Acquisition*: Gather labeled journal articles (title + abstract + discipline) from past issues.  
+- *Text Cleaning*:  
+  - Remove special characters, numbers, and irrelevant formatting.  
+  - Apply tokenization, stopword removal, and lemmatization (e.g., using NLTK or spaCy).  
+- *Feature Extraction*:  
+  - Bag-of-Words (BoW) / TF-IDF for traditional ML models.  
+  - Word embeddings (Word2Vec, GloVe) or transformer-based embeddings (BERT, SciBERT) for deep learning models.  
+
+### *Step 2: Model Development*  
+We will experiment with multiple classification algorithms:  
+- *Traditional ML Models*:  
+  - Naïve Bayes (baseline for text classification)  
+  - Support Vector Machines (SVM)  
+  - Random Forest / XGBoost (with TF-IDF features)  
+- *Deep Learning Models*:  
+  - LSTM / BiLSTM for sequential text analysis  
+  - Transformer-based models (e.g., BERT, DistilBERT for higher accuracy)  
+
+### *Step 3: Model Evaluation & Optimization*  
+- *Performance Metrics*:  
+  - Accuracy, Precision, Recall, F1-Score (per class and macro-average).  
+  - Confusion matrix to analyze misclassifications.  
+- *Hyperparameter Tuning*:  
+  - GridSearchCV / RandomSearch for traditional models.  
+  - Learning rate scheduling for deep learning models.  
+- *Explainability*:  
+  - SHAP values / LIME to interpret model decisions.  
+  - Key term extraction (e.g., most influential words for each category).  
+
+### *Step 4: Deployment & Integration*  
+- *API Development*: Wrap the best model in a REST API (Flask/FastAPI).  
+- *Journal Submission System Integration*:  
+  - Automatically suggest categories during manuscript submission.  
+  - Allow editors to override predictions if needed.

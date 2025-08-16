@@ -63,7 +63,7 @@ We will experiment with multiple classification algorithms:
   - Automatically suggest categories during manuscript submission.  
   - Allow editors to override predictions if needed.
 
-4. **Success Criteria**
+4. ## **Success Criteria**
 For the model to be considered successful, it must meet the following benchmarks:
 
 **Performance Metrics**:
@@ -76,7 +76,7 @@ Low Latency - Predictions should take <1 second to avoid slowing submissions.
 Scalability - Model should handle thousands of submissions without performance drops.
 Explainability - Editors should understand why an article was classified a certain way.
 
-## **5. Potential Challenges & Mitigation Strategies**
+**5. Potential Challenges & Mitigation Strategies**
 
 | **Challenge** | **Mitigation Strategy** |
 |---|---|
@@ -86,13 +86,13 @@ Explainability - Editors should understand why an article was classified a certa
 | **Model Interpretability** | Apply **SHAP** or **LIME** to provide transparent, editor-friendly explanations of predictions. |
 
 
-## **6. Future Enhancements**
+**6. Future Enhancements**
 - **Multi-Label Classification** — Support articles that legitimately belong to multiple fields.  
 - **Active Learning** — Allow editors to correct misclassifications and feed corrections back into the training loop to iteratively improve model performance.  
 - **Trend Analysis** — Use classification outputs over time to track and visualize research trends in UNZA-JABS.
 
 
-## **Conclusion**
+**Conclusion**
 
 This project will produce an automated, accurate, and scalable classification system for the Journal of Agricultural and Biomedical Sciences. By reducing manual effort and improving consistency, the system will speed up the publication process and enhance discoverability of relevant research. Leveraging modern NLP and ML techniques ensures the solution is robust, explainable, and suitable for real-world deployment.
 
